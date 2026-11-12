@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#172b52"/><stop offset=".5" stop-color="#0a0e26"/><stop offset="1" stop-color="#350d2a"/></linearGradient>
+<linearGradient id="ice" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#9aefff"/><stop offset=".55" stop-color="#30b8fc"/><stop offset="1" stop-color="#2151a8"/></linearGradient>
+<linearGradient id="fire" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff99a8"/><stop offset=".55" stop-color="#ff3f66"/><stop offset="1" stop-color="#a9164b"/></linearGradient>
+<linearGradient id="border" x1="0" x2="1"><stop stop-color="#53dcff"/><stop offset=".5" stop-color="#d9f4ff"/><stop offset="1" stop-color="#ff5479"/></linearGradient>
+<filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="1.6"/></filter>
+</defs>
+<rect x="1" y="1" width="62" height="62" rx="13" fill="url(#bg)" stroke="url(#border)" stroke-width="2"/>
+<!-- electric red and cyan energy behind the icon -->
+<path d="M8 15L15 9M8 50L14 55" stroke="#43cfff" stroke-width="2" opacity=".65" stroke-linecap="round"/>
+<path d="M56 15L49 9M56 50L50 55" stroke="#ff5d78" stroke-width="2" opacity=".65" stroke-linecap="round"/>
+<!-- clean readable left and right cube heads -->
+<path d="M6 22L26 17L31 26L28 45L14 51L5 42Z" fill="url(#ice)" stroke="#a3f5ff" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M58 22L38 17L33 26L36 45L50 51L59 42Z" fill="url(#fire)" stroke="#ffa3b7" stroke-width="1.9" stroke-linejoin="round"/>
+<!-- 3D top highlights -->
+<path d="M6 22L26 17L28 23L10 29Z" fill="#bafaff" opacity=".56"/>
+<path d="M58 22L38 17L36 23L54 29Z" fill="#ffd0d5" opacity=".48"/>
+<path d="M6 42L14 51L28 45L29 39L14 45Z" fill="#183c8a" opacity=".42"/>
+<path d="M58 42L50 51L36 45L35 39L50 45Z" fill="#7c0d40" opacity=".52"/>
+<!-- eyes slant inward -->
+<path d="M12 34L22 37L23 41L15 40Z" fill="#041d37"/>
+<path d="M52 34L42 37L41 41L49 40Z" fill="#2a0718"/>
+<path d="M16 36L20 37.4" stroke="#e4ffff" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M48 36L44 37.4" stroke="#fff0f3" stroke-width="1.6" stroke-linecap="round"/>
+<!-- clash spark: three-part burst, intentionally broad for 16x16 icons -->
+<path d="M35 14L26 31H34L29 51L43 28H34Z" fill="#fff8cf" opacity=".45" filter="url(#glow)"/>
+<path d="M35 14L26 31H34L29 51L43 28H34Z" fill="#fff6b5" stroke="#fefefe" stroke-width="1.1" stroke-linejoin="round"/>
+</svg>
